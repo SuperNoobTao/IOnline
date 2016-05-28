@@ -92,16 +92,6 @@
 
 
 
-
-	<!--在useraction中注入service-->
-	<!--在useraction中注入userbeen-->
-	<bean id="UserAction" class="cn.edu.zucc.action.UserAction"  >
-		<property name="userService" ref="userService" ></property>
-		<property name="usertableBean" ref="usertableBean"></property>
-	</bean>
-	<bean id="userService" class="cn.edu.zucc.service.User.UserServiceImpl" />
-	<bean id="usertableBean" class="cn.edu.zucc.model.UsertableBean" />
-
 	<!--在userServiceImpl中注入userDao-->
 	<bean id="UserService" class="cn.edu.zucc.service.User.UserServiceImpl"  >
 		<property name="userDao" ref="userDao" ></property>

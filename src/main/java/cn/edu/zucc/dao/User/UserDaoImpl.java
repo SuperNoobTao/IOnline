@@ -4,12 +4,14 @@ import cn.edu.zucc.common.CommonDaoImpl;
 import cn.edu.zucc.model.UsertableBean;
 import org.hibernate.Query;
 import org.hibernate.Session;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 /**
  * Created by shentao on 2016/5/21.
  */
+@Repository
 public class UserDaoImpl extends CommonDaoImpl<UsertableBean> implements  UserDao{
 
 

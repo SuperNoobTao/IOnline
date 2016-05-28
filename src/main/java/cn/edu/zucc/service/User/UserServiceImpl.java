@@ -2,16 +2,18 @@ package cn.edu.zucc.service.User;
 
 import cn.edu.zucc.dao.User.UserDao;
 import cn.edu.zucc.model.UsertableBean;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 /**
  * Created by shentao on 2016/5/21.
  */
-
+@Service
 public class UserServiceImpl implements UserService{
 
-
+    @Autowired
     private UserDao  userDao;
 
     public UserDao getUserDao() {

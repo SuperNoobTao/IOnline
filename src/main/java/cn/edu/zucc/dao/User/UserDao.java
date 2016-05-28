@@ -1,13 +1,16 @@
 package cn.edu.zucc.dao.User;
 
 import cn.edu.zucc.model.UsertableBean;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 /**
  * Created by shentao on 2016/5/21.
  */
+@Repository
 public interface UserDao {
+
     public void save(UsertableBean usertableBean) throws Exception;
     public void delete(UsertableBean usertableBean) throws Exception;
     public void update(UsertableBean usertableBean) throws Exception;

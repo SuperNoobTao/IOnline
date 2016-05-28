@@ -25,7 +25,7 @@ public class test {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
         SessionFactory sessionFactory = (SessionFactory) context.getBean("sessionFactory");
-        Session session = sessionFactory.getCurrentSession();
+        Session session = sessionFactory.openSession();
         List list = (List) session.createQuery("from UsertableBean ").list();
 
         Iterator iterator = list.iterator();

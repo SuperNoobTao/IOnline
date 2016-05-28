@@ -1,75 +1,70 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!doctype html>
-<html class="no-js fixed-layout">
-<head>
-  <meta charset="utf-8">
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Login Page | Amaze UI Example</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Amaze UI Admin index Examples</title>
-
-  <meta name="keywords" content="index">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <meta name="renderer" content="webkit">
   <meta http-equiv="Cache-Control" content="no-siteapp" />
-  <link rel="icon" type="image/png" hre="assets/i/favicon.png">
-  <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
-  <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+  <link rel="alternate icon" type="image/png" href="assets/i/favicon.png">
   <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
-  <link rel="stylesheet" href="assets/css/admin.css">
+  <style>
+    .header {
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 200%;
+      color: #333;
+      margin-top: 30px;
+    }
+    .header p {
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-<!--[if lte IE 9]>
-
-<![endif]-->
-
-<header class="am-topbar am-topbar-inverse admin-header">
-  <div class="am-topbar-brand">
-          <strong>  几乎  </strong>
+<div class="header">
+  <div class="am-g">
+    <h1>IOnline</h1>
+    <p>分享知识<br/>一个知识分享的平台</p>
   </div>
+  <hr />
+</div>
 
-  <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+<div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
+  <div class="am-u-md-8 am-u-sm-centered">
+    <form method="post" class="am-form" action="/login" >
+      <div class="am-input-group am-form-group">
+        <span class="am-input-group-label"><i class="am-icon-user am-icon-fw"></i></span>
+        <input type="text" class="am-form-field" name="usertableBean.studentNumber" placeholder="Username">
+      </div>
 
-    <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
-      <li>
-  <span class="am-icon-envelope-o">
+      <%--密码--%>
+      <div class="am-input-group am-form-group">
+        <span class="am-input-group-label"><i class="am-icon-lock am-icon-fw"></i></span>
+        <input type="text" class="am-form-field" name="usertableBean.password" placeholder="Password">
+      </div>
 
-        <button class="am-btn am-btn-primary am-btn-xs" type="button">搜索</button>
-      </span>
+      <label for="remember-me">
+        <input id="remember-me" type="checkbox">
+        记住密码
+      </label>
 
-  </li>
-      <li><a href="javascript:;"><span class="am-icon-envelope-o"></span> 消息 <span class="am-badge am-badge-warning">5</span></a></li>
-      <li class="am-dropdown" data-am-dropdown>
-        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
-          <span class="am-icon-users"></span> 管理员 <span class="am-icon-caret-down"></span>
+      <div class="am-cf">
+        <input type="submit" name="" value="登 录" class="am-btn am-btn-primary am-btn-sm am-fl">
+        <input type="submit" name="" value="忘记密码" class="am-btn am-btn-default am-btn-sm am-fr">
+      </div>
 
-        </a>
-        <ul class="am-dropdown-content">
-          <li><a href="#"><span class="am-icon-user"></span> 资料</a></li>
-          <li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
-          <li><a href="#"><span class="am-icon-power-off"></span> 退出</a></li>
-        </ul>
-      </li>
-      <li class="am-hide-sm-only"><a href="javascript:;" id="admin-fullscreen"><span class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>
-    </ul>
+    </form>
+
+
+
+    <hr>
+    <p>© 2016 -------------------------------------------</p>
+
   </div>
-</header>
-
-
-
-
-
-
-<a href="#" class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu" data-am-offcanvas="{target: '#admin-offcanvas'}"></a>
-
-<!--[if lt IE 9]>
-<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
-<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
-<![endif]-->
-
-<!--[if (gte IE 9)|!(IE)]><!-->
-<script src="assets/js/jquery.min.js"></script>
-<!--<![endif]-->
-<script src="assets/js/amazeui.min.js"></script>
-
+</div>
 </body>
 </html>

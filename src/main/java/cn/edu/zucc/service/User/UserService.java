@@ -1,6 +1,8 @@
 package cn.edu.zucc.service.User;
 
 import cn.edu.zucc.model.UsertableBean;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -8,7 +10,7 @@ import java.util.List;
 /**
  * Created by shentao on 2016/5/21.
  */
-
+@Service
 public interface UserService {
 
     public int register(UsertableBean usertableBean) throws Exception;
