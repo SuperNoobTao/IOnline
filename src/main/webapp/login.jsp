@@ -35,16 +35,16 @@
 
   <div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
       <div class="am-u-md-8 am-u-sm-centered">
-        <form method="post" class="am-form" action="/login.do" >
+        <form method="post" class="am-form" action="/login" >
           <div class="am-input-group am-form-group">
             <span class="am-input-group-label"><i class="am-icon-user am-icon-fw"></i></span>
-            <input type="text" class="am-form-field" name="usertableBean.studentNumber" placeholder="Username">
+            <input type="text" class="am-form-field" name="studentNumber" placeholder="Username">
           </div>
 
           <%--密码--%>
           <div class="am-input-group am-form-group">
             <span class="am-input-group-label"><i class="am-icon-lock am-icon-fw"></i></span>
-            <input type="text" class="am-form-field" name="usertableBean.password" placeholder="Password">
+            <input type="text" class="am-form-field" name="password" placeholder="Password">
           </div>
 
           <label for="remember-me">
